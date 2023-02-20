@@ -1,7 +1,7 @@
 # CSS_Study
 
 ## Styled Components
-1. 컴포넌트 만들기
+### 1. 컴포넌트 만들기
 
 - ES6의 Template literal(템플릿 문자열)를 사용한다 
 
@@ -18,7 +18,8 @@ const ComponentName = styled.tag`
 `;
 ```
 <br /> <br />
-2. 컴포넌트 재활용
+
+### 2. 컴포넌트 재활용
 
 - 컴포넌트를 선언하고 styled()에 재활용할 컴포넌트 전달후 추가하고싶은 스타일 속성 작성
 
@@ -41,7 +42,8 @@ const ComponentName = styled.(Re_ComponentName)`
 `;
 ```
 <br /> <br />
-3. Props 활용하기
+
+### 3. Props 활용하기
 
 - ${}(리터럴 템플릿)을 활용하여 JS처럼 코드를 사용하자.
 
@@ -51,7 +53,7 @@ CSSelement : ${(props) => FunctionCode}
 `;
 ```
 
-3-1. Props로 조건부 렌더링하기
+### 3-1. Props로 조건부 렌더링하기
 
 - 삼항연산자를 활용하여 JS처럼 코드를 사용하자.
 
@@ -64,7 +66,7 @@ export default Function App(){
 }
 ```
 
-3-2. Props 값으로 렌더링하기
+### 3-2. Props 값으로 렌더링하기
 
 - props의 값을 통째로 활용해서 컴포넌트 렌더링에 활용 가능하다.
 
@@ -87,7 +89,7 @@ export default Function App(){
 
 <br /> <br />
 
-4. 전역 스타일 설정하기
+### 4. 전역 스타일 설정하기
 
 - createGlobalStyle 함수를 불러온뒤 CSS속성을 입력한뒤 최상위 컴포넌트로 사용한다.
 
