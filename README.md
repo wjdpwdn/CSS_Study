@@ -1,12 +1,19 @@
 # [React] Custom Component
 
 - [CSS에는 한계점과 문제점이 많았다.](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#%EA%B8%B0%EC%A1%B4%EC%9D%98-css%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%9C%EA%B3%84%EC%A0%90)
+
 <br/>
+
 - [CSS의 개선방안 (CSS, SASS, BEM, StyledComponents)](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#css%EC%9D%98-%EA%B0%9C%EC%84%A0-css--sass--bem--css-modules--styled-components)
+
 <br/>
+
 - [Styled Components를 더 알아보자.](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#styled-components)
+
 <br/>
+
 - [CDD Tool Storybook을 배워보자.](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#storybook)
+
 <br/> <br/>
 
 # 기존의 CSS의 문제점과 한계점
