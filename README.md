@@ -198,3 +198,11 @@ npm run storybook // 스토리북 서버 실행(localhost:6006)
       textColor: "blue"
     }
   ```
+  <br/>
+  ```javascript
+    export const StorybookTitle = (args) => {
+    return <Title {...args} />
+    }
+  ```
+  ![스크린샷 2023-02-20 오후 4 47 33](https://user-images.githubusercontent.com/102521448/220044127-d08e0dc0-2817-4650-90b8-725d26517752.png)
+
