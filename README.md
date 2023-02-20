@@ -121,11 +121,74 @@ function App(){
   - 각각 컴포넌트들을 따로볼수 있게 구성해주어, 한번에 하나의 컴포넌트에서 작업이 가능할수 있게 도와준다.
   -()
 
-### 1.  설치하기
+### 1.  설치하기, 실행하기
 
 ```javascript
 npx storybook init // 스토리북 설치
+npm i @testing-library/dom // 서버실행 오류시 입력
 npm run storybook // 스토리북 서버 실행(localhost:6006)
 ```
 
-### 2.  설치하기
+<br /> <br />
+
+### 2.  사용하기
+
+- storybook을 설치한 이후, `src`폴더에 `stories` 폴더, 상위 폴더에 `.storybook` 이 생긴다.
+  - `.storybook` 폴더는 컴포넌트 파일과 똑같은 파일 이름에 .stories를 붙여 파일을 만들면 알아서 스토리로 인식한다.
+
+  ```javascript
+
+  // ./src/Title.js
+
+  import React from "react";
+
+  const Title = ({title, textColor}) => (
+    <h1 style={{color : textColor}}>{title}</h1>
+  );
+
+  export default Title;
+  ```
+  
+  ```javascript
+  // ./src/Title.stories.js
+
+  import Title from "./Title";
+
+  export default {
+    // title : 컴포넌트 이름으로, '/'를 넣어 카테고리화 할 수 있다.
+    title: "Practice/Title",
+    // component : 어떤 컴포넌트를 가져와서 스토리로 만들 것인지 명시한다.
+    component: Title,
+    // argTypes : 컴포넌트에 필요한 전달인자의 종류와 타입을 정해준다.
+    argTypes: {
+      // title 전달인자에 text 타입 필요
+      title: { control: "text" }, 
+      // textColor 전달인자에 text 타입 필요
+      textColor: { control: "text" }
+    }
+  }
+
+    // 템플릿을 만들어줍니다.
+    // 이 템플릿에서는 Title 컴포넌트가 args를 전달받아 props로 내려줍니다.
+    const Template = (args) => <Title {...args} />
+
+    // Storybook에서 확인하고 싶은 컴포넌트는 export const로 작성합니다.
+    // 템플릿을 사용하여 Storybook에 넣어줄 스토리를 하나 만들어주었습니다.
+    // Template.bind({}); 는 정해진 문법이라고 생각하고 사용하시면 됩니다.
+    export const RedTitle = Template.bind({});
+
+    // 만들어준 스토리의 전달인자를 작성해줍니다.
+    RedTitle.args= {
+      title: "Red Title",
+      textColor: "red"
+    }
+
+    // 스토리를 하나 더 만듭니다.
+    export const BlueTitle = Template.bind({});
+
+    // 스토리의 전달인자를 작성해줍니다.
+    BlueTitle.args= {
+      title: "Blue Title",
+      textColor: "blue"
+    }
+  ```
