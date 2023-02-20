@@ -1,13 +1,19 @@
 # [React] Custom Component
-[]()
+
+[기존 CSS의 문제점과 한계점](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#%EA%B8%B0%EC%A1%B4%EC%9D%98-css%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%9C%EA%B3%84%EC%A0%90)
+[CSS의 개선]()
+[Styled Components]()
 
 # 기존의 CSS의 문제점과 한계점
 
 - 다양한 디바이스(모바일 환경)의 등장으로 디스플레이를 커버해야하기 때문에 CSS가 더 복잡해짐.
 
-## CDD (Component-Driven Development)
+# CDD (Component-Driven Development)
 
 - 재사용가능한 UI컴포넌트를 미리 디자인하고 개발하기위해 등장한 개발 방법으로 CDD가 탄생하게 되었다.
+
+## CSS의 개선 (CSS > SASS > BEM > CSS Modules > Styled Components)
+
 - CSS를 거쳐 SASS > BEM > CSS Modules > Styled Components로 CSS가 개선되고 있다.
 
 ### CSS 전처리기의 등장 (SASS)
