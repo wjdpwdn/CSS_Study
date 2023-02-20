@@ -1,3 +1,6 @@
+# [React] Custom Component
+[]()
+
 # 기존의 CSS의 문제점과 한계점
 
 - 다양한 디바이스(모바일 환경)의 등장으로 디스플레이를 커버해야하기 때문에 CSS가 더 복잡해짐.
@@ -33,16 +36,25 @@ $base-color: rgba(123,12,56,0.88)
 
 ```
 
-### BEM(Block, Element, Modifier)
+### BEM(Block__Element--Modifier)
 
-- 
+- 클래스명 선택자가 장황해짐
+- 재사용할시마다 모든 UI컴포넌트를 명시적으로 확장해야만하는 문제점 발생
 
 ```css
 .header__navigation--navi-text {
   color : red;
 }
 
+
 ```
+
+### Styled-Component (CSS-in-JS의 등장)
+
+- CSS-in-JS에는 대표적으로 styled component가 있다.
+- 기능적 혹은 상태를 가진 컴포넌트들로부터 ui를 완전 분리시켜 사용할 수 있는 패턴을 제공한다.
+
+![스크린샷 2023-02-20 오전 11 05 32](https://user-images.githubusercontent.com/102521448/220074739-a6f6e3bc-d337-4416-8be3-064cee973d83.png)
 
 
 ## Styled Components
