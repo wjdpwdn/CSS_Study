@@ -148,6 +148,7 @@ npm run storybook // 스토리북 서버 실행(localhost:6006)
 
   export default Title;
   ```
+  <img width="230" alt="스크린샷 2023-02-20 오후 4 17 49" src="https://user-images.githubusercontent.com/102521448/220038030-ceaa64f6-ff6c-4bfa-b212-913559063c41.png">
   
   ```javascript
   // ./src/Title.stories.js
