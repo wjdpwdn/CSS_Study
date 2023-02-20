@@ -1,6 +1,52 @@
-# CSS_Study
+# 기존의 CSS의 문제점과 한계점
 
-# Styled Components
+- 다양한 디바이스(모바일 환경)의 등장으로 디스플레이를 커버해야하기 때문에 CSS가 더 복잡해짐.
+
+## CDD (Component-Driven Development)
+
+- 재사용가능한 UI컴포넌트를 미리 디자인하고 개발하기위해 등장한 개발 방법으로 CDD가 탄생하게 되었다.
+- CSS를 거쳐 SASS > BEM > CSS Modules > Styled Components로 CSS가 개선되고 있다.
+
+### CSS 전처리기의 등장 (SASS)
+- SASS는 Syntactically Awesome Style Sheets의 약자로, CSS를 확장해 주는 스크립팅 언어다.
+- 즉, SASS는 SCSS 코드를 읽어서 전처리한뒤 전역 CSS 번들 파일을 만들어주는 전처리기의 역할을 한다.
+
+```css
+.alert {
+  border : 1px solid rgba(123,12,56,0.88);
+}
+.button {
+  color : rgba(123,12,56,0.88);
+}
+```
+
+▼ CSS vs SASS
+
+```css
+$base-color: rgba(123,12,56,0.88)
+.alert {
+  border : 1px solid $base-color;
+}
+.button {
+  color : $base-color;
+}
+
+```
+
+### BEM(Block, Element, Modifier)
+
+- 
+
+```css
+.header__navigation--navi-text {
+  color : red;
+}
+
+```
+
+
+## Styled Components
+
 ### 1. 컴포넌트 만들기
 
 - ES6의 Template literal(템플릿 문자열)를 사용한다 
@@ -155,6 +201,7 @@ npm run storybook // 스토리북 서버 실행(localhost:6006)
   <img width="230" alt="스크린샷 2023-02-20 오후 4 17 49" src="https://user-images.githubusercontent.com/102521448/220038030-ceaa64f6-ff6c-4bfa-b212-913559063c41.png">
   
    <br />
+   
   ```javascript
   // ./src/Title.stories.js
 
@@ -198,7 +245,9 @@ npm run storybook // 스토리북 서버 실행(localhost:6006)
       textColor: "blue"
     }
   ```
+  
   <br/>
+  
   ```javascript
     export const StorybookTitle = (args) => {
     return <Title {...args} />
