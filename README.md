@@ -1,6 +1,6 @@
 # CSS_Study
 
-## Styled Components
+# Styled Components
 ### 1. 컴포넌트 만들기
 
 - ES6의 Template literal(템플릿 문자열)를 사용한다 
@@ -17,6 +17,7 @@ const ComponentName = styled.tag`
   ...
 `;
 ```
+
 <br /> <br />
 
 ### 2. 컴포넌트 재활용
@@ -112,3 +113,19 @@ function App(){
 }
 ```
 <br /> <br />
+
+# StoryBook
+
+- StoryBook 이란?
+  - Component Driven Development를 하기 위한 도구
+  - 각각 컴포넌트들을 따로볼수 있게 구성해주어, 한번에 하나의 컴포넌트에서 작업이 가능할수 있게 도와준다.
+  -()
+
+### 1.  설치하기
+
+```javascript
+npx storybook init // 스토리북 설치
+npm run storybook // 스토리북 서버 실행(localhost:6006)
+```
+
+### 2.  설치하기
