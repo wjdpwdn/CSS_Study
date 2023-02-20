@@ -1,12 +1,19 @@
 # [React] Custom Component
 
 [기존 CSS의 문제점과 한계점](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#%EA%B8%B0%EC%A1%B4%EC%9D%98-css%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%9C%EA%B3%84%EC%A0%90)
-[CSS의 개선]()
-[Styled Components]()
+<br/>
+[CSS의 개선](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#css%EC%9D%98-%EA%B0%9C%EC%84%A0-css--sass--bem--css-modules--styled-components)
+<br/>
+[Styled Components](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#styled-components)
+<br/>
+[CDD 도구 storybook](https://github.com/wjdpwdn/CSS_Study/blob/main/README.md#storybook)
+<br/> <br/>
 
 # 기존의 CSS의 문제점과 한계점
 
 - 다양한 디바이스(모바일 환경)의 등장으로 디스플레이를 커버해야하기 때문에 CSS가 더 복잡해짐.
+
+<br/> <br/>
 
 # CDD (Component-Driven Development)
 
@@ -62,6 +69,7 @@ $base-color: rgba(123,12,56,0.88)
 
 ![스크린샷 2023-02-20 오전 11 05 32](https://user-images.githubusercontent.com/102521448/220074739-a6f6e3bc-d337-4416-8be3-064cee973d83.png)
 
+<br/> <br/>
 
 ## Styled Components
 
@@ -177,6 +185,8 @@ function App(){
 }
 ```
 <br /> <br />
+
+<br/> <br/>
 
 # StoryBook
 
