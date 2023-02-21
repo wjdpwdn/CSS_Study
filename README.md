@@ -24,6 +24,7 @@
 
 # CDD (Component-Driven Development)
 
+- +) 부품단위로 UI 컴포넌트를 만들어 나가는 개발 방법
 - 재사용가능한 UI컴포넌트를 미리 디자인하고 개발하기위해 등장한 개발 방법으로 CDD가 탄생하게 되었다.
 
 ## CSS의 개선 (CSS > SASS > BEM > CSS Modules > Styled Components)
@@ -53,7 +54,6 @@ $base-color: rgba(123,12,56,0.88)
 .button {
   color : $base-color;
 }
-
 ```
 
 ### BEM(Block__Element--Modifier)
@@ -65,12 +65,11 @@ $base-color: rgba(123,12,56,0.88)
 .header__navigation--navi-text {
   color : red;
 }
-
-
 ```
 
-### Styled-Component (CSS-in-JS의 등장)
+### Styled-Components (CSS-in-JS)
 
+- +) CSS,HTML 을 JS에서 코딩이 가능하도록 도와주는 라이브러리
 - CSS-in-JS에는 대표적으로 styled component가 있다.
 - 기능적 혹은 상태를 가진 컴포넌트들로부터 ui를 완전 분리시켜 사용할 수 있는 패턴을 제공한다.
 
